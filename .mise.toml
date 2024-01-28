@@ -1,0 +1,4 @@
+[tools]
+
+python = {version='3.11', virtualenv='.venv'}
+terraform = '1.7.1'
