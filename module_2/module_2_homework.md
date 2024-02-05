@@ -115,7 +115,7 @@ Which of the following creates a new column `lpep_pickup_date` by converting `lp
 ### Solution
 Add this to the transformer block:
 ```python
-data['lpep_pickup_date'] = pd.to_datetime(data['lpep_pickup_datetime']).dt.date
+data['lpep_pickup_date'] = data['lpep_pickup_datetime'].dt.date
 ```
 
 
